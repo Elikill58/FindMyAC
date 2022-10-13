@@ -1,0 +1,23 @@
+[
+    {
+        "name": "AC 1",
+        "link": "",
+        "color": "red",
+        "price": 1,
+        "ghost": false
+    },
+    {
+        "name": "AC 2",
+        "link": "",
+        "color": "blue",
+        "price": 2,
+        "ghost": false
+    },
+    {
+        "name": "AC 3",
+        "link": "",
+        "color": "#123456",
+        "price": 0,
+        "ghost": true
+    }
+]

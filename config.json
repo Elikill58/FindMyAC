@@ -5,7 +5,44 @@
         "color": "black",
         "price": "Free",
         "platforms": ["Spigot", "BungeeCord"],
-        "bedrock": "Exempt"
+        "bedrock": "Exempt",
+        "plugin_required": "None"
+    },
+    {
+        "name": "SoaromaSAC",
+        "link": "https://www.spigotmc.org/resources/87702/",
+        "color": "#06C1EE",
+        "price": "Free",
+        "platforms": ["Spigot"],
+        "bedrock": "Managed",
+        "plugin_required": "None"
+    },
+    {
+        "name": "Negativity v1",
+        "link": "https://www.spigotmc.org/resources/48399/",
+        "color": "#F15152",
+        "price": "Free",
+        "platforms": ["Spigot", "BungeeCord", "Sponge", "Velocity"],
+        "bedrock": "Exempt",
+        "plugin_required": "None"
+    },
+    {
+        "name": "ThemisAC",
+        "link": "https://www.spigotmc.org/resources/90766/",
+        "color": "black",
+        "price": "Free",
+        "platforms": ["Spigot", "BungeeCord"],
+        "bedrock": "Managed",
+        "plugin_required": "ProtocoLib"
+    },
+    {
+        "name": "Updated-NoCheatPlus",
+        "link": "https://github.com/Updated-NoCheatPlus/NoCheatPlus",
+        "color": "black",
+        "price": "Free",
+        "platforms": ["Spigot"],
+        "bedrock": "None",
+        "plugin_required": "None"
     },
     {
         "name": "Vulcan",
@@ -13,14 +50,43 @@
         "color": "#B50604",
         "price": "10-20€",
         "platforms": ["Spigot", "BungeeCord"],
-        "bedrock": "Exempt"
+        "bedrock": "Exempt",
+        "plugin_required": "None"
     },
     {
-        "name": "Negativity",
+        "name": "Negativity v2",
         "link": "https://www.spigotmc.org/resources/86874/",
         "color": "#BB86FC",
         "price": "1-10€",
         "platforms": ["Spigot", "BungeeCord", "Sponge", "Fabric", "Minestom", "Velocity"],
-        "bedrock": "Managed"
+        "bedrock": "Managed",
+        "plugin_required": "None"
+    },
+    {
+        "name": "GodsEye",
+        "link": "https://www.spigotmc.org/resources/69595/",
+        "color": "#6F8782",
+        "price": "10-20€",
+        "platforms": ["Spigot"],
+        "bedrock": "None",
+        "plugin_required": "ProtocoLib"
+    },
+    {
+        "name": "AntiAura",
+        "link": "https://www.spigotmc.org/resources/1368/",
+        "color": "red",
+        "price": "10-20€",
+        "platforms": ["Spigot", "BungeeCord"],
+        "bedrock": "Managed",
+        "plugin_required": "ProtocoLib"
+    },
+    {
+        "name": "Wraith",
+        "link": "https://www.spigotmc.org/resources/66887/",
+        "color": "black",
+        "price": "1-10€",
+        "platforms": ["Spigot"],
+        "bedrock": "None",
+        "plugin_required": "None"
     }
 ]

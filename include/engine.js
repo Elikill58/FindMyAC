@@ -51,6 +51,7 @@ let questions = [];
 
 questions.push({ question: "Which platform are you mainly using ?", key: "platforms", action: showArrayContent });
 questions.push({ question: "What is your budget ?", key: "price", action: showEqualsContent });
+questions.push({ question: "Which plugin have you installed, or agree with requiring them ?", key: "plugin_required", action: showEqualsContent });
 questions.push({ question: "Which bedrock (geyser) support do you require ?", key: "bedrock", action: showEqualsContent });
 
 // load engine

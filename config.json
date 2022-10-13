@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Grim",
+        "link": "https://www.spigotmc.org/resources/99923/",
+        "color": "black",
+        "price": "Free",
+        "platforms": ["Spigot", "BungeeCord"]
+    },
+    {
+        "name": "Vulcan",
+        "link": "https://www.spigotmc.org/resources/83626/",
+        "color": "#B50604",
+        "price": "10-20€",
+        "platforms": ["Spigot", "BungeeCord"]
+    },
+    {
+        "name": "Negativity",
+        "link": "https://www.spigotmc.org/resources/86874/",
+        "color": "#BB86FC",
+        "price": "1-10€",
+        "platforms": ["Spigot", "BungeeCord", "Sponge", "Fabric", "Minestom", "Velocity"]
+    }
+]

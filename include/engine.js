@@ -2,7 +2,7 @@
 let anticheats = [];
 let result = [...anticheats];
 
-fetch("include/config.json").then(resp => {
+fetch("config.json").then(resp => {
     resp.json().then(json => {
         anticheats = json;
         result = [...json];
@@ -12,22 +12,20 @@ fetch("include/config.json").then(resp => {
 function getAllValues(key) {
     let val = [];
     for(let ac of result) {
-        if(val.indexOf(ac[key]) == -1) {
-            val.push(ac[key]);
+        let obj = ac[key];
+        if(obj instanceof Array) {
+            for(let arr of obj) {
+                if(val.indexOf(arr) == -1) {
+                    val.push(arr);
+                }
+            }
+        } else {
+            if(val.indexOf(obj) == -1) {
+                val.push(obj);
+            }
         }
     }
-    val.sort();
     return val;
-}
-
-// load questions
-
-function showPriceQuestion() {
-    return showIntContent("Which price ?", "price");
-}
-
-function showGhostQuestion() {
-    return showBooleanContent("Ghost checks ?", "ghost");
 }
 
 // load filters
@@ -42,10 +40,16 @@ function filterSameValue(key, val) {
     nextQuestion();
 }
 
+function filterContainsValue(key, val) {
+    result = result.filter((ac, index, arr) => ac[key].indexOf(val) != -1);
+    nextQuestion();
+}
+
+// load questions
 let questions = [];
 
-questions.push({ show: showPriceQuestion });
-questions.push({ show: showGhostQuestion });
+questions.push({ question: "Which platform are you mainly using ?", key: "platforms", action: showArrayContent });
+questions.push({ question: "What is your budget ?", key: "price", action: showEqualsContent });
 
 // load engine
 let c;
@@ -74,11 +78,36 @@ function showIntContent(question, key) {
         nextQuestion();
         return;
     }
+    values.sort((a, b) => a - b);
     for(let a of values) {
-        if(a == 0 && key == "price")
-            buttons += `<button onclick="filterSameValue('price','0');" class="button is-black">Free</button>`;
-        else
-            buttons += `<button onclick="filterIntValue('` + key + `','` + a + `');" class="button is-black">` + a + `</button>`;
+        buttons += `<button onclick="filterIntValue('` + key + `','` + a + `');" class="button is-black">` + a + `</button>`;
+    }
+    c.innerHTML = getHeaderText(question) + buttons;
+}
+
+function showEqualsContent(question, key) {
+    let buttons = `<button onclick="nextQuestion();" class="button is-black">Ignore</button>`;
+    let values = getAllValues(key);
+    if(values.length == 1) { // all AC have sames values
+        nextQuestion();
+        return;
+    }
+    values.sort();
+    for(let a of values) {
+         buttons += `<button onclick="filterSameValue('` + key + `','` + a + `');" class="button is-black">` + a + `</button>`;
+    }
+    c.innerHTML = getHeaderText(question) + buttons;
+}
+
+function showArrayContent(question, key) {
+    let buttons = `<button onclick="nextQuestion();" class="button is-black">Ignore</button>`;
+    let values = getAllValues(key);
+    if(values.length == 1) { // all AC have sames values
+        nextQuestion();
+        return;
+    }
+    for(let a of values) {
+        buttons += `<button onclick="filterContainsValue('` + key + `','` + a + `');" class="button is-black">` + a + `</button>`;
     }
     c.innerHTML = getHeaderText(question) + buttons;
 }
@@ -93,7 +122,7 @@ function nextQuestion() {
         end();
     } else {
         let q = questions.shift();
-        q.show();
+        q.action(q.question, q.key);
     }
 }
 

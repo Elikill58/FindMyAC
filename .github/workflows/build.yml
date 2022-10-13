@@ -28,4 +28,4 @@ jobs:
           localDir: "./"
           remoteDir: "/var/www/findmyac"
           dryRun: false
-          exclude: ".git/,.github/"
+          exclude: ".git,.github"

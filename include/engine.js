@@ -132,6 +132,7 @@ function nextQuestion() {
 
 function end() {
     document.getElementById("stop").style.display = "none";
+    result.sort((a, b) => ('' + a.name).localeCompare(b.name));
     console.log(result);
     let names = "";
     for (const ac of result) {

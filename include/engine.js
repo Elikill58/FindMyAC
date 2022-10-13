@@ -6,6 +6,7 @@ fetch("config.json").then(resp => {
     resp.json().then(json => {
         anticheats = json;
         result = [...json];
+        document.getElementById("ac-amount").innerHTML = anticheats.length;
     })
 });
 
@@ -55,24 +56,24 @@ questions.push({ question: "What is your budget ?", key: "price", action: showEq
 let c;
 
 function getHeaderText(question) {
-    return `<h2 class="title is-2" style="color:white;">` + question + `</h2>`;
+    return `<h2 class="title is-2">` + question + `</h2>`;
 }
 
 function showBooleanContent(question, key) {
-    let buttons = `<button onclick="nextQuestion();" class="button is-black">Ignore</button>`;
+    let buttons = `<button onclick="nextQuestion();" class="button">Ignore</button>`;
     let values = getAllValues(key);
     if(values.length == 1) { // all AC have sames values
         nextQuestion();
         return;
     }
     for(let a of values) {
-        buttons += `<button onclick="filterSameValue('` + key + `','` + a + `');" class="button is-black">` + (a === true ? "Yes" : "No") + `</button>`;
+        buttons += `<button onclick="filterSameValue('` + key + `','` + a + `');" class="button">` + (a === true ? "Yes" : "No") + `</button>`;
     }
     c.innerHTML = getHeaderText(question) + buttons;
 }
 
 function showIntContent(question, key) {
-    let buttons = `<button onclick="nextQuestion();" class="button is-black">Ignore</button>`;
+    let buttons = `<button onclick="nextQuestion();" class="button">Ignore</button>`;
     let values = getAllValues(key);
     if(values.length == 1) { // all AC have sames values
         nextQuestion();
@@ -80,13 +81,13 @@ function showIntContent(question, key) {
     }
     values.sort((a, b) => a - b);
     for(let a of values) {
-        buttons += `<button onclick="filterIntValue('` + key + `','` + a + `');" class="button is-black">` + a + `</button>`;
+        buttons += `<button onclick="filterIntValue('` + key + `','` + a + `');" class="button">` + a + `</button>`;
     }
     c.innerHTML = getHeaderText(question) + buttons;
 }
 
 function showEqualsContent(question, key) {
-    let buttons = `<button onclick="nextQuestion();" class="button is-black">Ignore</button>`;
+    let buttons = `<button onclick="nextQuestion();" class="button">Ignore</button>`;
     let values = getAllValues(key);
     if(values.length == 1) { // all AC have sames values
         nextQuestion();
@@ -94,26 +95,27 @@ function showEqualsContent(question, key) {
     }
     values.sort();
     for(let a of values) {
-         buttons += `<button onclick="filterSameValue('` + key + `','` + a + `');" class="button is-black">` + a + `</button>`;
+         buttons += `<button onclick="filterSameValue('` + key + `','` + a + `');" class="button">` + a + `</button>`;
     }
     c.innerHTML = getHeaderText(question) + buttons;
 }
 
 function showArrayContent(question, key) {
-    let buttons = `<button onclick="nextQuestion();" class="button is-black">Ignore</button>`;
+    let buttons = `<button onclick="nextQuestion();" class="button">Ignore</button>`;
     let values = getAllValues(key);
     if(values.length == 1) { // all AC have sames values
         nextQuestion();
         return;
     }
     for(let a of values) {
-        buttons += `<button onclick="filterContainsValue('` + key + `','` + a + `');" class="button is-black">` + a + `</button>`;
+        buttons += `<button onclick="filterContainsValue('` + key + `','` + a + `');" class="button">` + a + `</button>`;
     }
     c.innerHTML = getHeaderText(question) + buttons;
 }
 
 function start() {
     c = document.getElementById("main");
+    document.getElementById("stop").style.display = null;
     nextQuestion();
 }
 
@@ -127,10 +129,11 @@ function nextQuestion() {
 }
 
 function end() {
+    document.getElementById("stop").style.display = "none";
     console.log(result);
     let names = "";
     for (const ac of result) {
-        names += `<a href="` + ac.link +  `" class="button is-black ac-button" style="background-color: ` + ac.color + ` !important;">` + ac.name + `</a>`;
+        names += `<a href="` + ac.link +  `" class="button ac-button" style="background-color: ` + ac.color + ` !important;">` + ac.name + `</a>`;
     }
-    c.innerHTML = `<h2 class="title is-2" style="color:white;">Founded AC:</h2>` + names;
+    c.innerHTML = `<h2 class="title is-2">Founded AC:</h2>` + names;
 }

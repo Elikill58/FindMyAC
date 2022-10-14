@@ -28,3 +28,4 @@ jobs:
           localDir: "./"
           remoteDir: "/var/www/findmyac"
           dryRun: false
+          forceUpload: true

@@ -160,6 +160,6 @@ function end() {
         </tr>`;
         //c.innerHTML += `<tr><td>href="` + ac.link +  `" class="button ac-button" style="background-color: ` + ac.color + ` !important;">` + ac.name + `</a>`;
     }
-    html += `</table><br><small>Don't agree with this ? Ask for changes on <a href="https://discord.dd/YKbqtA6TAv">discord</a>.</small>`;
+    html += `</table><br><small>Don't agree with this ? Ask for changes on <a href="https://discord.gg/YKbqtA6TAv">discord</a>.</small>`;
     c.innerHTML = html;
 }

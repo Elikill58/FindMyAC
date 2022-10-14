@@ -6,6 +6,6 @@ Helps you to find the perfect anticheat solution for you.
 
 You are asked a series of questions and each one gradually picks off anti-cheats which don't fit your criteria.
 
-## I want to test it
+## How to use it ?
 
-There isn't available server now.
+Visit [findmyac.ovh](https://findmyac.ovh/).

@@ -132,11 +132,23 @@ function nextQuestion() {
 
 function end() {
     document.getElementById("stop").style.display = "none";
+    if(result.length == 0) {
+        c.innerHTML = `<h2 class="title is-2">Nothing found. Maybe your critera are too specific.</h2>`;
+        return;
+    }
     result.sort((a, b) => ('' + a.name).localeCompare(b.name));
     console.log(result);
-    let names = "";
+    let html = `<h2 class="title is-2">Founded AC:</h2>
+        <table style="margin: auto;">
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Link</th>
+        </tr>`;
     for (const ac of result) {
-        names += `<a href="` + ac.link +  `" class="button ac-button" style="background-color: ` + ac.color + ` !important;">` + ac.name + `</a>`;
+        html += `<tr><td>` + ac.name + `</td><td>` + ac.price + `</td><td><a href="` + ac.link +  `" class="button ac-button">Link</a></td></tr>`;
+        //c.innerHTML += `<tr><td>href="` + ac.link +  `" class="button ac-button" style="background-color: ` + ac.color + ` !important;">` + ac.name + `</a>`;
     }
-    c.innerHTML = `<h2 class="title is-2">Founded AC:</h2>` + names;
+    html += `</table>`;
+    c.innerHTML = html;
 }

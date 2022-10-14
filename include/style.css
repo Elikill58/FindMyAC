@@ -18,7 +18,7 @@ a {
 }
 
 .initial {
-    padding-top: 20vh;
+    padding-top: 15vh;
     text-align: center;
 }
 
@@ -54,4 +54,8 @@ hr {
 .button:hover {
     transition-duration: 200ms;
     transform: scale(1.05);
+}
+
+tr {
+    height: 2em;
 }

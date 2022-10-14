@@ -138,7 +138,7 @@
         "price": "10-20€",
         "price_exact": "20£",
         "platforms": ["Spigot"],
-        "bedrock": "None",
+        "bedrock": "Exempt",
         "plugin_required": "None",
         "server_type": "General"
     },

@@ -4,6 +4,7 @@
         "link": "https://www.spigotmc.org/resources/99923/",
         "color": "black",
         "price": "Free",
+        "price_exact": "Free",
         "platforms": ["Spigot", "BungeeCord"],
         "bedrock": "Exempt",
         "plugin_required": "None"
@@ -13,6 +14,7 @@
         "link": "https://www.spigotmc.org/resources/87702/",
         "color": "#06C1EE",
         "price": "Free",
+        "price_exact": "Free",
         "platforms": ["Spigot"],
         "bedrock": "Managed",
         "plugin_required": "None"
@@ -22,6 +24,7 @@
         "link": "https://www.spigotmc.org/resources/48399/",
         "color": "#F15152",
         "price": "Free",
+        "price_exact": "Free",
         "platforms": ["Spigot", "BungeeCord", "Sponge", "Velocity"],
         "bedrock": "Exempt",
         "plugin_required": "None"
@@ -31,6 +34,7 @@
         "link": "https://www.spigotmc.org/resources/90766/",
         "color": "black",
         "price": "Free",
+        "price_exact": "Free",
         "platforms": ["Spigot", "BungeeCord"],
         "bedrock": "Managed",
         "plugin_required": "ProtocoLib"
@@ -40,6 +44,7 @@
         "link": "https://github.com/Updated-NoCheatPlus/NoCheatPlus",
         "color": "black",
         "price": "Free",
+        "price_exact": "Free",
         "platforms": ["Spigot"],
         "bedrock": "None",
         "plugin_required": "None"
@@ -49,6 +54,7 @@
         "link": "https://www.spigotmc.org/resources/83626/",
         "color": "#B50604",
         "price": "10-20€",
+        "price_exact": "$19.99",
         "platforms": ["Spigot", "BungeeCord"],
         "bedrock": "Exempt",
         "plugin_required": "None"
@@ -58,6 +64,7 @@
         "link": "https://www.spigotmc.org/resources/86874/",
         "color": "#BB86FC",
         "price": "1-10€",
+        "price_exact": "8€",
         "platforms": ["Spigot", "BungeeCord", "Sponge", "Fabric", "Minestom", "Velocity"],
         "bedrock": "Managed",
         "plugin_required": "None"
@@ -67,6 +74,7 @@
         "link": "https://www.spigotmc.org/resources/69595/",
         "color": "#6F8782",
         "price": "10-20€",
+        "price_exact": "15.5£",
         "platforms": ["Spigot"],
         "bedrock": "None",
         "plugin_required": "ProtocoLib"
@@ -76,6 +84,7 @@
         "link": "https://www.spigotmc.org/resources/1368/",
         "color": "red",
         "price": "10-20€",
+        "price_exact": "12£",
         "platforms": ["Spigot", "BungeeCord"],
         "bedrock": "Managed",
         "plugin_required": "ProtocoLib"
@@ -85,6 +94,7 @@
         "link": "https://www.spigotmc.org/resources/66887/",
         "color": "black",
         "price": "1-10€",
+        "price_exact": "4.99€",
         "platforms": ["Spigot"],
         "bedrock": "None",
         "plugin_required": "None"

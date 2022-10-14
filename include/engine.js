@@ -150,7 +150,7 @@ function end() {
     for (const ac of result) {
         html += `<tr>
             <td><span style="background-color: ` + ac.color + ` !important; padding: 4px; border-radius: 3px;">` + ac.name + `</span></td>
-            <td>` + ac.price + `</td>
+            <td>` + ac.price_exact + `</td>
             <td>` + ac.plugin_required + `</td>
             <td>` + ac.bedrock + `</td>
             <td><a href="` + ac.link +  `" class="button ac-button">Link</a></td>

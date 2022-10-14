@@ -51,6 +51,7 @@ let questions = [];
 
 questions.push({ question: "Which platform are you mainly using ?", key: "platforms", action: showArrayContent });
 questions.push({ question: "What is your budget ?", key: "price", action: showEqualsContent });
+questions.push({ question: "What is the type of your server ?", key: "server_type", action: showEqualsContent });
 questions.push({ question: "Which plugin have you installed, or agree with requiring them ?", key: "plugin_required", action: showEqualsContent });
 questions.push({ question: "Which bedrock (geyser) support do you require ?", key: "bedrock", action: showEqualsContent });
 
@@ -143,6 +144,7 @@ function end() {
         <tr>
             <th>Name</th>
             <th>Price</th>
+            <th>Server Type</th>
             <th>Require</th>
             <th>Bedrock</th>
             <th>Link</th>
@@ -151,12 +153,13 @@ function end() {
         html += `<tr>
             <td><span style="background-color: ` + ac.color + ` !important; padding: 4px; border-radius: 3px;">` + ac.name + `</span></td>
             <td>` + ac.price_exact + `</td>
+            <td>` + ac.server_type + `</td>
             <td>` + ac.plugin_required + `</td>
             <td>` + ac.bedrock + `</td>
             <td><a href="` + ac.link +  `" class="button ac-button">Link</a></td>
         </tr>`;
         //c.innerHTML += `<tr><td>href="` + ac.link +  `" class="button ac-button" style="background-color: ` + ac.color + ` !important;">` + ac.name + `</a>`;
     }
-    html += `</table>`;
+    html += `</table><br><small>Don't agree with this ? Ask for changes on <a href="https://discord.dd/YKbqtA6TAv">discord</a>.</small>`;
     c.innerHTML = html;
 }

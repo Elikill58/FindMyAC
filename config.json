@@ -7,7 +7,8 @@
         "price_exact": "Free",
         "platforms": ["Spigot", "BungeeCord"],
         "bedrock": "Exempt",
-        "plugin_required": "None"
+        "plugin_required": "None",
+        "server_type": "PvP/Practice"
     },
     {
         "name": "SoaromaSAC",
@@ -17,7 +18,8 @@
         "price_exact": "Free",
         "platforms": ["Spigot"],
         "bedrock": "Managed",
-        "plugin_required": "None"
+        "plugin_required": "None",
+        "server_type": "General"
     },
     {
         "name": "Negativity v1",
@@ -27,7 +29,8 @@
         "price_exact": "Free",
         "platforms": ["Spigot", "BungeeCord", "Sponge", "Velocity"],
         "bedrock": "Exempt",
-        "plugin_required": "None"
+        "plugin_required": "None",
+        "server_type": "General"
     },
     {
         "name": "ThemisAC",
@@ -37,7 +40,8 @@
         "price_exact": "Free",
         "platforms": ["Spigot", "BungeeCord"],
         "bedrock": "Managed",
-        "plugin_required": "ProtocoLib"
+        "plugin_required": "ProtocoLib",
+        "server_type": "General"
     },
     {
         "name": "Updated-NoCheatPlus",
@@ -47,7 +51,8 @@
         "price_exact": "Free",
         "platforms": ["Spigot"],
         "bedrock": "None",
-        "plugin_required": "None"
+        "plugin_required": "None",
+        "server_type": "General"
     },
     {
         "name": "Vulcan",
@@ -57,7 +62,8 @@
         "price_exact": "$19.99",
         "platforms": ["Spigot", "BungeeCord"],
         "bedrock": "Exempt",
-        "plugin_required": "None"
+        "plugin_required": "None",
+        "server_type": "PvP"
     },
     {
         "name": "Negativity v2",
@@ -67,7 +73,8 @@
         "price_exact": "8€",
         "platforms": ["Spigot", "BungeeCord", "Sponge", "Fabric", "Minestom", "Velocity"],
         "bedrock": "Managed",
-        "plugin_required": "None"
+        "plugin_required": "None",
+        "server_type": "General"
     },
     {
         "name": "GodsEye",
@@ -77,7 +84,8 @@
         "price_exact": "15.5£",
         "platforms": ["Spigot"],
         "bedrock": "None",
-        "plugin_required": "ProtocoLib"
+        "plugin_required": "ProtocoLib",
+        "server_type": "General"
     },
     {
         "name": "AntiAura",
@@ -87,7 +95,8 @@
         "price_exact": "12£",
         "platforms": ["Spigot", "BungeeCord"],
         "bedrock": "Managed",
-        "plugin_required": "ProtocoLib"
+        "plugin_required": "ProtocoLib",
+        "server_type": "PvP"
     },
     {
         "name": "Wraith",
@@ -97,6 +106,7 @@
         "price_exact": "4.99€",
         "platforms": ["Spigot"],
         "bedrock": "None",
-        "plugin_required": "None"
+        "plugin_required": "None",
+        "server_type": "General"
     }
 ]

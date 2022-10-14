@@ -145,8 +145,8 @@ function end() {
             <th>Name</th>
             <th>Price</th>
             <th>Server Type</th>
-            <th>Require</th>
-            <th>Bedrock</th>
+            <th class="mobile-only">Require</th>
+            <th class="mobile-only">Bedrock</th>
             <th>Link</th>
         </tr>`;
     for (const ac of result) {
@@ -154,8 +154,8 @@ function end() {
             <td><span style="background-color: ` + ac.color + ` !important; padding: 4px; border-radius: 3px;">` + ac.name + `</span></td>
             <td>` + ac.price_exact + `</td>
             <td>` + ac.server_type + `</td>
-            <td>` + ac.plugin_required + `</td>
-            <td>` + ac.bedrock + `</td>
+            <td class="mobile-only">` + ac.plugin_required + `</td>
+            <td class="mobile-only">` + ac.bedrock + `</td>
             <td><a href="` + ac.link +  `" class="button ac-button">Link</a></td>
         </tr>`;
         //c.innerHTML += `<tr><td>href="` + ac.link +  `" class="button ac-button" style="background-color: ` + ac.color + ` !important;">` + ac.name + `</a>`;

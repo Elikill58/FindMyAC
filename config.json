@@ -13,6 +13,17 @@
         "minecraft_version_exact": "1.8 - 1.19"
     },
     {
+        "name": "Kauri",
+        "link": "https://www.spigotmc.org/resources/101667/",
+        "color": "#8A1E78",
+        "price": "Free",
+        "price_exact": "Free",
+        "platforms": ["Spigot"],
+        "bedrock": "None",
+        "plugin_required": "Atlas",
+        "server_type": "PvP"
+    },
+    {
         "name": "SoaromaSAC",
         "link": "https://www.spigotmc.org/resources/87702/",
         "color": "#06C1EE",
@@ -93,7 +104,7 @@
     {
         "name": "Matrix",
         "link": "https://matrix.rip/",
-        "color": "purple",
+        "color": "#9F22CC",
         "price": "10-20€",
         "price_exact": "$20",
         "platforms": ["Spigot"],
@@ -106,11 +117,11 @@
     {
         "name": "Sparky",
         "link": "https://sparky.ac/",
-        "color": "yellow",
+        "color": "#FFDA16",
         "price": "90-100€",
         "price_exact": "90£",
         "platforms": ["Spigot"],
-        "bedrock": "Exempt",
+        "bedrock": "None",
         "plugin_required": "None",
         "server_type": "PvP/Practice",
         "minecraft_version": ["1.7", "1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.18"],
@@ -119,11 +130,11 @@
     {
         "name": "Karhu",
         "link": "https://karhu.ac/",
-        "color": "#17E7F9",
+        "color": "#22C3CC",
         "price": "20-30€",
         "price_exact": "25€",
         "platforms": ["Spigot"],
-        "bedrock": "Exempt",
+        "bedrock": "None",
         "plugin_required": "None",
         "server_type": "PvP/Practice",
         "minecraft_version": ["1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.18"],
@@ -132,11 +143,11 @@
     {
         "name": "Spartan",
         "link": "https://www.spigotmc.org/resources/25638/",
-        "color": "#01FF20",
+        "color": "#089000",
         "price": "20-30€",
         "price_exact": "22.49€",
         "platforms": ["Spigot", "BungeeCord"],
-        "bedrock": "Exempt",
+        "bedrock": "Managed",
         "plugin_required": "None",
         "server_type": "General",
         "minecraft_version": ["1.7", "1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19"],

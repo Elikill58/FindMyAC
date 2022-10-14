@@ -77,6 +77,61 @@
         "server_type": "General"
     },
     {
+        "name": "Matrix",
+        "link": "https://matrix.rip/",
+        "color": "purple",
+        "price": "10-20€",
+        "price_exact": "$20",
+        "platforms": ["Spigot"],
+        "bedrock": "Exempt",
+        "plugin_required": "None",
+        "server_type": "General"
+    },
+    {
+        "name": "Sparky",
+        "link": "https://sparky.ac/",
+        "color": "yellow",
+        "price": "90-100€",
+        "price_exact": "90£",
+        "platforms": ["Spigot"],
+        "bedrock": "Exempt",
+        "plugin_required": "None",
+        "server_type": "PvP/Practice"
+    },
+    {
+        "name": "Karhu",
+        "link": "https://karhu.ac/",
+        "color": "#17E7F9",
+        "price": "20-30€",
+        "price_exact": "25€",
+        "platforms": ["Spigot"],
+        "bedrock": "Exempt",
+        "plugin_required": "None",
+        "server_type": "PvP/Practice"
+    },
+    {
+        "name": "Spartan",
+        "link": "https://www.spigotmc.org/resources/25638/",
+        "color": "#01FF20",
+        "price": "20-30€",
+        "price_exact": "22.49€",
+        "platforms": ["Spigot"],
+        "bedrock": "Exempt",
+        "plugin_required": "None",
+        "server_type": "General"
+    },
+    {
+        "name": "AAC",
+        "link": "https://www.spigotmc.org/resources/6442/",
+        "color": "#FFB201",
+        "price": "10-20€",
+        "price_exact": "20£",
+        "platforms": ["Spigot"],
+        "bedrock": "Exempt",
+        "plugin_required": "None",
+        "server_type": "General"
+    },
+    {
         "name": "GodsEye",
         "link": "https://www.spigotmc.org/resources/69595/",
         "color": "#6F8782",

@@ -126,8 +126,8 @@
         "bedrock": "None",
         "plugin_required": "None",
         "server_type": "PvP/Practice",
-        "minecraft_version": ["1.7", "1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.18"],
-        "minecraft_version_exact": "1.7 - 1.18"
+        "minecraft_version": ["1.7", "1.8", "1.9 - 1.12"],
+        "minecraft_version_exact": "1.7 - 1.12"
     },
     {
         "name": "Karhu",

@@ -146,7 +146,11 @@ function end() {
             <th>Link</th>
         </tr>`;
     for (const ac of result) {
-        html += `<tr><td>` + ac.name + `</td><td>` + ac.price + `</td><td><a href="` + ac.link +  `" class="button ac-button">Link</a></td></tr>`;
+        html += `<tr>
+            <td><span style="background-color: ` + ac.color + ` !important; padding: 4px; border-radius: 3px;">` + ac.name + `</span></td>
+            <td>` + ac.price + `</td>
+            <td><a href="` + ac.link +  `" class="button ac-button">Link</a></td>
+        </tr>`;
         //c.innerHTML += `<tr><td>href="` + ac.link +  `" class="button ac-button" style="background-color: ` + ac.color + ` !important;">` + ac.name + `</a>`;
     }
     html += `</table>`;

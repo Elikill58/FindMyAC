@@ -52,6 +52,7 @@ let questions = [];
 questions.push({ question: "Which platform are you mainly using ?", key: "platforms", action: showArrayContent });
 questions.push({ question: "What is your budget ?", key: "price", action: showEqualsContent });
 questions.push({ question: "What is the type of your server ?", key: "server_type", action: showEqualsContent });
+questions.push({ question: "Why minecraft version are you using ?", key: "minecraft_version", action: showArrayContent });
 questions.push({ question: "Which plugin have you installed, or agree with requiring them ?", key: "plugin_required", action: showEqualsContent });
 questions.push({ question: "Which bedrock (geyser) support do you require ?", key: "bedrock", action: showEqualsContent });
 
@@ -145,6 +146,7 @@ function end() {
             <th>Name</th>
             <th>Price</th>
             <th>Server Type</th>
+            <th>MC Version</th>
             <th class="mobile-only">Require</th>
             <th class="mobile-only">Bedrock</th>
             <th>Link</th>
@@ -154,6 +156,7 @@ function end() {
             <td><span style="background-color: ` + ac.color + ` !important; padding: 4px; border-radius: 3px;">` + ac.name + `</span></td>
             <td>` + ac.price_exact + `</td>
             <td>` + ac.server_type + `</td>
+            <td>` + ac.minecraft_version_exact + `</td>
             <td class="mobile-only">` + ac.plugin_required + `</td>
             <td class="mobile-only">` + ac.bedrock + `</td>
             <td><a href="` + ac.link +  `" class="button ac-button">Link</a></td>

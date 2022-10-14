@@ -8,7 +8,9 @@
         "platforms": ["Spigot", "BungeeCord"],
         "bedrock": "Exempt",
         "plugin_required": "None",
-        "server_type": "PvP/Practice"
+        "server_type": "PvP/Practice",
+        "minecraft_version": ["1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19"],
+        "minecraft_version_exact": "1.8 - 1.19"
     },
     {
         "name": "SoaromaSAC",
@@ -19,7 +21,9 @@
         "platforms": ["Spigot"],
         "bedrock": "Managed",
         "plugin_required": "None",
-        "server_type": "General"
+        "server_type": "General",
+        "minecraft_version": ["1.17 - 1.19"],
+        "minecraft_version_exact": "1.17 - 1.19"
     },
     {
         "name": "Negativity v1",
@@ -30,7 +34,9 @@
         "platforms": ["Spigot", "BungeeCord", "Sponge", "Velocity"],
         "bedrock": "Exempt",
         "plugin_required": "None",
-        "server_type": "General"
+        "server_type": "General",
+        "minecraft_version": ["1.7", "1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19"],
+        "minecraft_version_exact": "1.7 - 1.19"
     },
     {
         "name": "ThemisAC",
@@ -41,7 +47,9 @@
         "platforms": ["Spigot", "BungeeCord"],
         "bedrock": "Managed",
         "plugin_required": "ProtocoLib",
-        "server_type": "General"
+        "server_type": "General",
+        "minecraft_version": ["1.17 - 1.19"],
+        "minecraft_version_exact": "1.17 - 1.19"
     },
     {
         "name": "Updated-NoCheatPlus",
@@ -52,7 +60,9 @@
         "platforms": ["Spigot"],
         "bedrock": "None",
         "plugin_required": "None",
-        "server_type": "General"
+        "server_type": "General",
+        "minecraft_version": ["1.5 - 1.6", "1.7", "1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19"],
+        "minecraft_version_exact": "1.5 - 1.19"
     },
     {
         "name": "Vulcan",
@@ -63,7 +73,9 @@
         "platforms": ["Spigot", "BungeeCord"],
         "bedrock": "Exempt",
         "plugin_required": "None",
-        "server_type": "PvP"
+        "server_type": "PvP",
+        "minecraft_version": ["1.7", "1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19"],
+        "minecraft_version_exact": "1.7 - 1.19"
     },
     {
         "name": "Negativity v2",
@@ -74,7 +86,9 @@
         "platforms": ["Spigot", "BungeeCord", "Sponge", "Fabric", "Minestom", "Velocity"],
         "bedrock": "Managed",
         "plugin_required": "None",
-        "server_type": "General"
+        "server_type": "General",
+        "minecraft_version": ["1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19"],
+        "minecraft_version_exact": "1.8 - 1.19"
     },
     {
         "name": "Matrix",
@@ -85,7 +99,9 @@
         "platforms": ["Spigot"],
         "bedrock": "Exempt",
         "plugin_required": "None",
-        "server_type": "General"
+        "server_type": "General",
+        "minecraft_version": ["1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19"],
+        "minecraft_version_exact": "1.8 - 1.19"
     },
     {
         "name": "Sparky",
@@ -96,7 +112,9 @@
         "platforms": ["Spigot"],
         "bedrock": "Exempt",
         "plugin_required": "None",
-        "server_type": "PvP/Practice"
+        "server_type": "PvP/Practice",
+        "minecraft_version": ["1.7", "1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.18"],
+        "minecraft_version_exact": "1.7 - 1.18"
     },
     {
         "name": "Karhu",
@@ -107,7 +125,9 @@
         "platforms": ["Spigot"],
         "bedrock": "Exempt",
         "plugin_required": "None",
-        "server_type": "PvP/Practice"
+        "server_type": "PvP/Practice",
+        "minecraft_version": ["1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.18"],
+        "minecraft_version_exact": "1.8 - 1.18"
     },
     {
         "name": "Spartan",
@@ -118,7 +138,9 @@
         "platforms": ["Spigot", "BungeeCord"],
         "bedrock": "Exempt",
         "plugin_required": "None",
-        "server_type": "General"
+        "server_type": "General",
+        "minecraft_version": ["1.7", "1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19"],
+        "minecraft_version_exact": "1.7 - 1.19"
     },
     {
         "name": "AAC",
@@ -129,7 +151,9 @@
         "platforms": ["Spigot"],
         "bedrock": "Exempt",
         "plugin_required": "None",
-        "server_type": "General"
+        "server_type": "General",
+        "minecraft_version": ["1.8", "1.9 - 1.13", "1.14 - 1.16"],
+        "minecraft_version_exact": "1.8 - 1.16"
     },
     {
         "name": "GodsEye",
@@ -140,7 +164,9 @@
         "platforms": ["Spigot"],
         "bedrock": "None",
         "plugin_required": "ProtocoLib",
-        "server_type": "General"
+        "server_type": "General",
+        "minecraft_version": ["1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19"],
+        "minecraft_version_exact": "1.8 - 1.19"
     },
     {
         "name": "AntiAura",
@@ -151,7 +177,9 @@
         "platforms": ["Spigot", "BungeeCord"],
         "bedrock": "Managed",
         "plugin_required": "ProtocoLib",
-        "server_type": "PvP"
+        "server_type": "PvP",
+        "minecraft_version": ["1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19"],
+        "minecraft_version_exact": "1.8 - 1.19"
     },
     {
         "name": "Wraith",
@@ -162,6 +190,8 @@
         "platforms": ["Spigot"],
         "bedrock": "None",
         "plugin_required": "None",
-        "server_type": "General"
+        "server_type": "General",
+        "minecraft_version": ["1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19"],
+        "minecraft_version_exact": "1.8 - 1.19"
     }
 ]

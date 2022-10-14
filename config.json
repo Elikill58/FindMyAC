@@ -115,7 +115,7 @@
         "color": "#01FF20",
         "price": "20-30€",
         "price_exact": "22.49€",
-        "platforms": ["Spigot"],
+        "platforms": ["Spigot", "BungeeCord"],
         "bedrock": "Exempt",
         "plugin_required": "None",
         "server_type": "General"

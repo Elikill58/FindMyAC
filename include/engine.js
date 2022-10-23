@@ -140,7 +140,7 @@ function end() {
     }
     result.sort((a, b) => ('' + a.name).localeCompare(b.name));
     console.log(result);
-    let html = `<h2 class="title is-2">Founded AC:</h2>
+    let html = `<h2 class="title is-2">Found AC:</h2>
         <table style="margin: auto;">
         <tr>
             <th>Name</th>
@@ -161,7 +161,6 @@ function end() {
             <td class="mobile-only">` + ac.bedrock + `</td>
             <td><a href="` + ac.link +  `" class="button ac-button">Link</a></td>
         </tr>`;
-        //c.innerHTML += `<tr><td>href="` + ac.link +  `" class="button ac-button" style="background-color: ` + ac.color + ` !important;">` + ac.name + `</a>`;
     }
     html += `</table><br><small>Don't agree with this ? Ask for changes on <a href="https://discord.gg/YKbqtA6TAv">discord</a>.</small>`;
     c.innerHTML = html;

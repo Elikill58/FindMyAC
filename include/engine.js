@@ -52,7 +52,7 @@ let questions = [];
 questions.push({ question: "Which platform are you mainly using ?", key: "platforms", action: showArrayContent });
 questions.push({ question: "What is your budget ?", key: "price", action: showEqualsContent });
 questions.push({ question: "What is the type of your server ?", key: "server_type", action: showEqualsContent });
-questions.push({ question: "Why minecraft version are you using ?", key: "minecraft_version", action: showArrayContent });
+questions.push({ question: "Which minecraft version are you using ?", key: "minecraft_version", action: showArrayContent });
 questions.push({ question: "Which plugin have you installed, or agree with requiring them ?", key: "plugin_required", action: showEqualsContent });
 questions.push({ question: "Which bedrock (geyser) support do you require ?", key: "bedrock", action: showEqualsContent });
 
@@ -91,7 +91,7 @@ function showIntContent(question, key) {
 }
 
 function showEqualsContent(question, key) {
-    let buttons = `<button onclick="nextQuestion();" class="button">Ignore</button>`;
+    let buttons = `<button onclick="nextQuestion();" class="button" style="background-color: midnightblue !important;">Ignore</button>`;
     let values = getAllValues(key);
     if(values.length == 1) { // all AC have sames values
         nextQuestion();

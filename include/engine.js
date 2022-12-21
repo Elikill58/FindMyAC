@@ -63,8 +63,12 @@ function getHeaderText(question) {
     return `<h2 class="title is-2">` + question + `</h2>`;
 }
 
+function getIgnoreButton() {
+    return `<button onclick="nextQuestion();" class="button" style="background-color: midnightblue !important;">Ignore</button>`;
+}
+
 function showBooleanContent(question, key) {
-    let buttons = `<button onclick="nextQuestion();" class="button">Ignore</button>`;
+    let buttons = getIgnoreButton();
     let values = getAllValues(key);
     if(values.length == 1) { // all AC have sames values
         nextQuestion();
@@ -77,7 +81,7 @@ function showBooleanContent(question, key) {
 }
 
 function showIntContent(question, key) {
-    let buttons = `<button onclick="nextQuestion();" class="button">Ignore</button>`;
+    let buttons = getIgnoreButton();
     let values = getAllValues(key);
     if(values.length == 1) { // all AC have sames values
         nextQuestion();
@@ -91,7 +95,7 @@ function showIntContent(question, key) {
 }
 
 function showEqualsContent(question, key) {
-    let buttons = `<button onclick="nextQuestion();" class="button" style="background-color: midnightblue !important;">Ignore</button>`;
+    let buttons = getIgnoreButton();
     let values = getAllValues(key);
     if(values.length == 1) { // all AC have sames values
         nextQuestion();
@@ -105,7 +109,7 @@ function showEqualsContent(question, key) {
 }
 
 function showArrayContent(question, key) {
-    let buttons = `<button onclick="nextQuestion();" class="button">Ignore</button>`;
+    let buttons = getIgnoreButton();
     let values = getAllValues(key);
     if(values.length == 1) { // all AC have sames values
         nextQuestion();

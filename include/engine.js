@@ -1,14 +1,10 @@
+let anticheats, result;
 
-let anticheats = [];
-let result = [...anticheats];
-
-fetch("config.json").then(resp => {
-    resp.json().then(json => {
-        anticheats = json;
-        result = [...json];
-        document.getElementById("ac-amount").innerHTML = anticheats.length;
-    })
-});
+(async () => {
+    anticheats = await (await fetch("config.json")).json();
+    result = [...anticheats];
+    document.getElementById("ac-amount").innerHTML = anticheats.length;
+})();
 
 function getAllValues(key) {
     let val = [];
@@ -47,41 +43,51 @@ function filterContainsValue(key, val) {
 }
 
 // load questions
-let questions = [];
-
-questions.push({ question: "Which platform are you mainly using ?", key: "platforms", action: showArrayContent });
-questions.push({ question: "What is your budget ?", key: "price", action: showEqualsContent });
-questions.push({ question: "What is the type of your server ?", key: "server_type", action: showEqualsContent });
-questions.push({ question: "Which minecraft version are you using ?", key: "minecraft_version", action: showArrayContent });
-questions.push({ question: "Which plugin have you installed, or agree with requiring them ?", key: "plugin_required", action: showEqualsContent });
-questions.push({ question: "Which bedrock (geyser) support do you require ?", key: "bedrock", action: showEqualsContent });
+let questions = [
+    { question: "Which platform are you mainly using ?", key: "platforms", action: showArrayContent },
+    { question: "What is your budget ?", key: "price", action: showEqualsContent },
+    { question: "What is the type of your server ?", key: "server_type", action: showEqualsContent },
+    { question: "Which minecraft version are you using ?", key: "minecraft_version", action: showArrayContent },
+    { question: "Which plugin have you installed, or agree with requiring them ?", key: "plugin_required", action: showEqualsContent },
+    { question: "Which bedrock (geyser) support do you require ?", key: "bedrock", action: showEqualsContent }
+];
 
 // load engine
-let c;
+let content;
 
 function getHeaderText(question) {
-    return `<h2 class="title is-2">` + question + `</h2>`;
+    const h2 = document.createElement("h2");
+    h2.innerHTML = question;
+    h2.classList.add("title");
+    h2.classList.add("is-2");
+    return h2;
 }
 
 function getIgnoreButton() {
-    return `<button onclick="nextQuestion();" class="button" style="background-color: midnightblue !important;">Ignore</button>`;
+    const button = document.createElement("button");
+    button.innerHTML = "Ignore";
+    button.classList.add("button");
+    button.classList.add("midnight");
+    button.onclick = nextQuestion;
+    return button;
 }
 
-function showBooleanContent(question, key) {
-    let buttons = getIgnoreButton();
+function showBooleanContent(key) {
     let values = getAllValues(key);
     if(values.length == 1) { // all AC have sames values
         nextQuestion();
         return;
     }
     for(let a of values) {
-        buttons += `<button onclick="filterSameValue('` + key + `','` + a + `');" class="button">` + (a === true ? "Yes" : "No") + `</button>`;
+        const button = document.createElement("button");
+        button.innerHTML = a === true ? "Yes" : "No";
+        button.onclick = (ev) => filterSameValue(key, a);
+        button.classList.add("button");
+        content.appendChild(button);
     }
-    c.innerHTML = getHeaderText(question) + buttons;
 }
 
-function showIntContent(question, key) {
-    let buttons = getIgnoreButton();
+function showIntContent(key) {
     let values = getAllValues(key);
     if(values.length == 1) { // all AC have sames values
         nextQuestion();
@@ -89,13 +95,15 @@ function showIntContent(question, key) {
     }
     values.sort((a, b) => a - b);
     for(let a of values) {
-        buttons += `<button onclick="filterIntValue('` + key + `','` + a + `');" class="button">` + a + `</button>`;
+        const button = document.createElement("button");
+        button.innerHTML = a === true ? "Yes" : "No";
+        button.onclick = (ev) => filterIntValue(key, a);
+        button.classList.add("button");
+        content.appendChild(button);
     }
-    c.innerHTML = getHeaderText(question) + buttons;
 }
 
-function showEqualsContent(question, key) {
-    let buttons = getIgnoreButton();
+function showEqualsContent(key) {
     let values = getAllValues(key);
     if(values.length == 1) { // all AC have sames values
         nextQuestion();
@@ -103,26 +111,31 @@ function showEqualsContent(question, key) {
     }
     values.sort();
     for(let a of values) {
-         buttons += `<button onclick="filterSameValue('` + key + `','` + a + `');" class="button">` + a + `</button>`;
+        const button = document.createElement("button");
+        button.innerHTML = a;
+        button.onclick = (ev) => filterSameValue(key, a);
+        button.classList.add("button");
+        content.appendChild(button);
     }
-    c.innerHTML = getHeaderText(question) + buttons;
 }
 
-function showArrayContent(question, key) {
-    let buttons = getIgnoreButton();
+function showArrayContent(key) {
     let values = getAllValues(key);
     if(values.length == 1) { // all AC have sames values
         nextQuestion();
         return;
     }
     for(let a of values) {
-        buttons += `<button onclick="filterContainsValue('` + key + `','` + a + `');" class="button">` + a + `</button>`;
+        const button = document.createElement("button");
+        button.innerHTML = a;
+        button.onclick = (ev) => filterContainsValue(key, a);
+        button.classList.add("button");
+        content.appendChild(button);
     }
-    c.innerHTML = getHeaderText(question) + buttons;
 }
 
 function start() {
-    c = document.getElementById("main");
+    content = document.getElementById("main");
     document.getElementById("stop").style.display = null;
     nextQuestion();
 }
@@ -132,14 +145,23 @@ function nextQuestion() {
         end();
     } else {
         let q = questions.shift();
-        q.action(q.question, q.key);
+
+        while(content.firstChild && content.removeChild(content.firstChild)); // clear old
+        content.appendChild(getHeaderText(q.question));
+        content.appendChild(getIgnoreButton());
+
+        q.action(q.key);
     }
 }
 
 function end() {
     document.getElementById("stop").style.display = "none";
     if(result.length == 0) {
-        c.innerHTML = `<h2 class="title is-2">Nothing found. Maybe your critera are too specific.</h2>`;
+        const h2 = document.createElement("h2");
+        h2.innerHTML = "Nothing found. Maybe your critera are too specific.";
+        h2.classList.add("title");
+        h2.classList.add("is-2");
+        content.appendChild(h2);
         return;
     }
     result.sort((a, b) => ('' + a.name).localeCompare(b.name));
@@ -167,5 +189,5 @@ function end() {
         </tr>`;
     }
     html += `</table><br><button onclick="location.reload()" class="button" style="background-color: initial !important;">Restart</button><br><small>Don't agree with this ? Ask for changes on <a href="https://discord.gg/YKbqtA6TAv">discord</a>.</small>`;
-    c.innerHTML = html;
+    content.innerHTML = html;
 }

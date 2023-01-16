@@ -68,13 +68,13 @@ hr {
 }
 
 .button {
-    color: white !important;
+    color: white;
     cursor: pointer;
     margin: 0 6px;
-    background: #21262d !important;
-    border: white 1px !important;
-    border-style: solid !important;
-    border-radius: 10px !important;
+    background: #21262d;
+    border: white 1px;
+    border-style: solid;
+    border-radius: 10px;
     justify-content: center;
     padding: calc(0.5em - 1px) 1em calc(0.5em - 1px) 1em;
     text-align: center;
@@ -82,6 +82,10 @@ hr {
     height: 2.5em;
 
     transition-duration: 200ms;
+}
+
+.midnight {
+    background: midnightblue !important;
 }
 
 .button:hover {

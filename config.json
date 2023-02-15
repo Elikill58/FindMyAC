@@ -120,7 +120,7 @@
         "name": "Sparky",
         "link": "https://sparky.ac/",
         "color": "#FFDA16",
-        "price": "90-100€",
+        "price": "50-100€",
         "price_exact": "90£",
         "platforms": ["Spigot"],
         "bedrock": "None",
@@ -206,5 +206,18 @@
         "server_type": "General",
         "minecraft_version": ["1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19"],
         "minecraft_version_exact": "1.8 - 1.19"
+    },
+    {
+        "name": "Verus",
+        "link": "https://verus.ac/",
+        "color": "blue",
+        "price": "50-100€",
+        "price_exact": "$60",
+        "platforms": ["Spigot"],
+        "bedrock": "None",
+        "plugin_required": "None",
+        "server_type": "General",
+        "minecraft_version": ["1.7", "1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17"],
+        "minecraft_version_exact": "1.7 - 1.17"
     }
 ]

@@ -9,8 +9,8 @@
         "bedrock": "Exempt",
         "plugin_required": "None",
         "server_type": "PvP/Practice",
-        "minecraft_version": ["1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19"],
-        "minecraft_version_exact": "1.8 - 1.19"
+        "minecraft_version": ["1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19", "1.20"],
+        "minecraft_version_exact": "1.8 - 1.20"
     },
     {
         "name": "Kauri",
@@ -48,8 +48,8 @@
         "bedrock": "Exempt",
         "plugin_required": "None",
         "server_type": "General",
-        "minecraft_version": ["1.7", "1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19"],
-        "minecraft_version_exact": "1.7 - 1.19"
+        "minecraft_version": ["1.7", "1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19", "1.20"],
+        "minecraft_version_exact": "1.7 - 1.20"
     },
     {
         "name": "ThemisAC",
@@ -61,8 +61,8 @@
         "bedrock": "Managed",
         "plugin_required": "ProtocoLib",
         "server_type": "General",
-        "minecraft_version": ["1.17 - 1.19"],
-        "minecraft_version_exact": "1.17 - 1.19"
+        "minecraft_version": ["1.17 - 1.19", "1.20"],
+        "minecraft_version_exact": "1.17 - 1.20"
     },
     {
         "name": "Updated-NoCheatPlus",
@@ -74,8 +74,8 @@
         "bedrock": "None",
         "plugin_required": "None",
         "server_type": "General",
-        "minecraft_version": ["1.5 - 1.6", "1.7", "1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19"],
-        "minecraft_version_exact": "1.5 - 1.19"
+        "minecraft_version": ["1.5 - 1.6", "1.7", "1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19", "1.20"],
+        "minecraft_version_exact": "1.5 - 1.20"
     },
     {
         "name": "Vulcan",
@@ -87,8 +87,8 @@
         "bedrock": "Exempt",
         "plugin_required": "None",
         "server_type": "PvP",
-        "minecraft_version": ["1.7", "1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19"],
-        "minecraft_version_exact": "1.7 - 1.19"
+        "minecraft_version": ["1.7", "1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19", "1.20"],
+        "minecraft_version_exact": "1.7 - 1.20"
     },
     {
         "name": "Negativity v2",
@@ -113,21 +113,8 @@
         "bedrock": "Exempt",
         "plugin_required": "None",
         "server_type": "General",
-        "minecraft_version": ["1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19"],
-        "minecraft_version_exact": "1.8 - 1.19"
-    },
-    {
-        "name": "Sparky",
-        "link": "https://sparky.ac/",
-        "color": "#FFDA16",
-        "price": "50-100€",
-        "price_exact": "90£",
-        "platforms": ["Spigot"],
-        "bedrock": "None",
-        "plugin_required": "None",
-        "server_type": "PvP/Practice",
-        "minecraft_version": ["1.7", "1.8", "1.9 - 1.12"],
-        "minecraft_version_exact": "1.7 - 1.12"
+        "minecraft_version": ["1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19", "1.20"],
+        "minecraft_version_exact": "1.8 - 1.20"
     },
     {
         "name": "Karhu",
@@ -152,8 +139,8 @@
         "bedrock": "Managed",
         "plugin_required": "None",
         "server_type": "General",
-        "minecraft_version": ["1.7", "1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19"],
-        "minecraft_version_exact": "1.7 - 1.19"
+        "minecraft_version": ["1.7", "1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19", "1.20"],
+        "minecraft_version_exact": "1.7 - 1.20"
     },
     {
         "name": "AAC",
@@ -204,8 +191,8 @@
         "bedrock": "None",
         "plugin_required": "None",
         "server_type": "General",
-        "minecraft_version": ["1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19"],
-        "minecraft_version_exact": "1.8 - 1.19"
+        "minecraft_version": ["1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19", "1.20"],
+        "minecraft_version_exact": "1.8 - 1.20"
     },
     {
         "name": "Verus",

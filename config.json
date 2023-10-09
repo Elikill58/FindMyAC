@@ -13,32 +13,6 @@
         "minecraft_version_exact": "1.8 - 1.20"
     },
     {
-        "name": "Kauri",
-        "link": "https://www.spigotmc.org/resources/101667/",
-        "color": "#8A1E78",
-        "price": "Free",
-        "price_exact": "Free",
-        "platforms": ["Spigot"],
-        "bedrock": "None",
-        "plugin_required": "Atlas",
-        "server_type": "PvP",
-        "minecraft_version": ["1.7", "1.9 - 1.13", "1.14 - 1.16"],
-        "minecraft_version_exact": "1.7 - 1.16"
-    },
-    {
-        "name": "SoaromaSAC",
-        "link": "https://www.spigotmc.org/resources/87702/",
-        "color": "#06C1EE",
-        "price": "Free",
-        "price_exact": "Free",
-        "platforms": ["Spigot"],
-        "bedrock": "Managed",
-        "plugin_required": "None",
-        "server_type": "General",
-        "minecraft_version": ["1.17 - 1.19"],
-        "minecraft_version_exact": "1.17 - 1.19"
-    },
-    {
         "name": "Negativity v1",
         "link": "https://www.spigotmc.org/resources/48399/",
         "color": "#F15152",
@@ -141,19 +115,6 @@
         "server_type": "General",
         "minecraft_version": ["1.7", "1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19", "1.20"],
         "minecraft_version_exact": "1.7 - 1.20"
-    },
-    {
-        "name": "AAC",
-        "link": "https://www.spigotmc.org/resources/6442/",
-        "color": "#FFB201",
-        "price": "10-20€",
-        "price_exact": "20£",
-        "platforms": ["Spigot"],
-        "bedrock": "Exempt",
-        "plugin_required": "None",
-        "server_type": "General",
-        "minecraft_version": ["1.8", "1.9 - 1.13", "1.14 - 1.16"],
-        "minecraft_version_exact": "1.8 - 1.16"
     },
     {
         "name": "GodsEye",

@@ -10,7 +10,7 @@
         "plugin_required": "None",
         "server_type": "PvP/Practice",
         "minecraft_version": ["1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19", "1.20", "1.20.4"],
-        "minecraft_version_exact": "1.8 - 1.20"
+        "minecraft_version_exact": "1.8 - 1.20.4"
     },
     {
         "name": "ThemisAC",
@@ -36,7 +36,7 @@
         "plugin_required": "None",
         "server_type": "General",
         "minecraft_version": ["1.5 - 1.6", "1.7", "1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19", "1.20", "1.20.4"],
-        "minecraft_version_exact": "1.5 - 1.20"
+        "minecraft_version_exact": "1.5 - 1.20.4"
     },
     {
         "name": "Vulcan",
@@ -49,7 +49,7 @@
         "plugin_required": "None",
         "server_type": "PvP",
         "minecraft_version": ["1.7", "1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19", "1.20", "1.20.4"],
-        "minecraft_version_exact": "1.7 - 1.20"
+        "minecraft_version_exact": "1.7 - 1.20.4"
     },
     {
         "name": "Negativity v2",
@@ -62,7 +62,7 @@
         "plugin_required": "None",
         "server_type": "General",
         "minecraft_version": ["1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19", "1.20", "1.20.4"],
-        "minecraft_version_exact": "1.8 - 1.19"
+        "minecraft_version_exact": "1.8 - 1.20.4"
     },
     {
         "name": "Matrix",
@@ -75,7 +75,7 @@
         "plugin_required": "None",
         "server_type": "General",
         "minecraft_version": ["1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19", "1.20", "1.20.4"],
-        "minecraft_version_exact": "1.8 - 1.20"
+        "minecraft_version_exact": "1.8 - 1.20.4"
     },
     {
         "name": "Karhu",
@@ -101,7 +101,7 @@
         "plugin_required": "None",
         "server_type": "General",
         "minecraft_version": ["1.7", "1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19", "1.20", "1.20.4"],
-        "minecraft_version_exact": "1.7 - 1.20"
+        "minecraft_version_exact": "1.7 - 1.20.4"
     },
     {
         "name": "GodsEye",

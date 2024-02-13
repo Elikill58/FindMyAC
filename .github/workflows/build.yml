@@ -6,19 +6,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       
       - name: Remove not-wanted files in server
         run: "rm -r README.md .git .github"
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         name: Upload Artifact
         with:
           name: FindMyAC
           path: "./*"
   
       - name: Copy repository contents
-        uses: wangyucode/sftp-upload-action@v1.4.6
+        uses: wangyucode/sftp-upload-action@v2.0.2
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}

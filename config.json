@@ -9,21 +9,8 @@
         "bedrock": "Exempt",
         "plugin_required": "None",
         "server_type": "PvP/Practice",
-        "minecraft_version": ["1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19", "1.20"],
+        "minecraft_version": ["1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19", "1.20", "1.20.4"],
         "minecraft_version_exact": "1.8 - 1.20"
-    },
-    {
-        "name": "Negativity v1",
-        "link": "https://www.spigotmc.org/resources/48399/",
-        "color": "#F15152",
-        "price": "Free",
-        "price_exact": "Free",
-        "platforms": ["Spigot", "BungeeCord", "Sponge", "Velocity"],
-        "bedrock": "Exempt",
-        "plugin_required": "None",
-        "server_type": "General",
-        "minecraft_version": ["1.7", "1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19", "1.20"],
-        "minecraft_version_exact": "1.7 - 1.20"
     },
     {
         "name": "ThemisAC",
@@ -48,7 +35,7 @@
         "bedrock": "None",
         "plugin_required": "None",
         "server_type": "General",
-        "minecraft_version": ["1.5 - 1.6", "1.7", "1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19", "1.20"],
+        "minecraft_version": ["1.5 - 1.6", "1.7", "1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19", "1.20", "1.20.4"],
         "minecraft_version_exact": "1.5 - 1.20"
     },
     {
@@ -61,7 +48,7 @@
         "bedrock": "Exempt",
         "plugin_required": "None",
         "server_type": "PvP",
-        "minecraft_version": ["1.7", "1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19", "1.20"],
+        "minecraft_version": ["1.7", "1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19", "1.20", "1.20.4"],
         "minecraft_version_exact": "1.7 - 1.20"
     },
     {
@@ -74,7 +61,7 @@
         "bedrock": "Managed",
         "plugin_required": "None",
         "server_type": "General",
-        "minecraft_version": ["1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19"],
+        "minecraft_version": ["1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19", "1.20", "1.20.4"],
         "minecraft_version_exact": "1.8 - 1.19"
     },
     {
@@ -87,7 +74,7 @@
         "bedrock": "Exempt",
         "plugin_required": "None",
         "server_type": "General",
-        "minecraft_version": ["1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19", "1.20"],
+        "minecraft_version": ["1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19", "1.20", "1.20.4"],
         "minecraft_version_exact": "1.8 - 1.20"
     },
     {
@@ -113,7 +100,7 @@
         "bedrock": "Managed",
         "plugin_required": "None",
         "server_type": "General",
-        "minecraft_version": ["1.7", "1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19", "1.20"],
+        "minecraft_version": ["1.7", "1.8", "1.9 - 1.13", "1.14 - 1.16", "1.17 - 1.19", "1.20", "1.20.4"],
         "minecraft_version_exact": "1.7 - 1.20"
     },
     {

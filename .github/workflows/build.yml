@@ -17,15 +17,3 @@ jobs:
           name: FindMyAC
           path: "./*"
   
-      - name: Copy repository contents
-        uses: wangyucode/sftp-upload-action@v1.4.9
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          port: ${{ secrets.PORT }}
-          privateKey: ${{ secrets.SSHKEY }}
-          passphrase: ${{ secrets.PASSPHRASE }}
-          localDir: "./"
-          remoteDir: "/var/www/findmyac"
-          dryRun: false
-          forceUpload: true
